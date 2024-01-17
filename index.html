@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Получение прогноза погоды</title>
+</head>
+<style>
+    * {
+        font-size: 32px;
+        font-family: sans-serif;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* input{
+    height: 15px;
+    width: 30px;
+} */
+    span {
+        color: red;
+        font-size: 32px;
+    }
+    .container{
+background-color: grey;
+color: aliceblue;
+width: 60vw;
+height: auto;
+    }
+    h1, h5{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .inp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="inp">
+            <h5>Введите город:</h5>
+            <input type="text" name="userCity" id="city">
+        </div>
+        
+        <h1>Прогноз погоды <span id=city> </span></h1>
+        <div id="weather"></div>
+        <img id="img" />
+        <div id="wind"></div>
+    
+        <div id="sunset"></div>
+        <div id="sunrise"></div>
+    
+        <script src="./script.js"></script>
+    </div>
+    
+</body>
+
+</html>
